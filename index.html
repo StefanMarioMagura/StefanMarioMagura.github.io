@@ -1,13 +1,273 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Bienvenido a ViralSynth</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stefan Mario Magura | AI, Cybersecurity & Systems</title>
+    <meta name="description" content="Portfolio of Stefan Mario Magura: IT Infrastructure, Cybersecurity, and Agentic AI Engineer.">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Boxicons for icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>ViralSynth</h1>
-  <p><a href="terminos.html">Términos de Servicio</a></p>
-  <p><a href="privacidad.html">Política de Privacidad</a></p>
+    <!-- Background Canvas for Node Network -->
+    <canvas id="bg-canvas"></canvas>
+
+    <header>
+        <a href="#" class="logo">S. Magura<span class="glow-dot">.</span></a>
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#portfolio">Enterprise Projects</a>
+            <a href="#credentials">Credentials</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="home">
+            <div class="home-content">
+                <div class="badge-wrapper">
+                    <span class="cyber-badge"><i class='bx bx-radar'></i> Available for Hire</span>
+                </div>
+                <h3>Hello, I'm</h3>
+                <h1>Stefan Mario <span>Magura</span></h1>
+                <h3>I orchestrate <span class="typing-text"></span><span class="cursor">&nbsp;</span></h3>
+                <p>
+                    Passionate <strong>IT Systems Specialist</strong> bridging the gap between cutting-edge Artificial Intelligence (Agentic Workflows, MCPs) and hard-core Infrastructure Security. I build, secure, and automate next-generation systems.
+                </p>
+                
+                <div class="btn-box">
+                    <a href="#portfolio" class="btn primary">View Projects</a>
+                    <a href="#about" class="btn secondary">Discover My Stack</a>
+                </div>
+
+                <div class="social-links">
+                    <a href="https://github.com/StefanMarioMagura" target="_blank" aria-label="GitHub"><i class='bx bxl-github'></i></a>
+                    <a href="https://www.linkedin.com/in/stefan-mario-magura-290a26367/" target="_blank" aria-label="LinkedIn"><i class='bx bxl-linkedin'></i></a>
+                </div>
+            </div>
+            
+            <div class="home-img">
+                <div class="img-border">
+                    <img src="assets/img/perfil.png" alt="Stefan Mario Magura">
+                </div>
+            </div>
+        </section>
+
+        <!-- About Bento Grid Section -->
+        <section id="about" class="about">
+            <h2 class="heading">Tech <span>Stack & Core</span></h2>
+            
+            <div class="bento-container">
+                <!-- Bento Box: AI & Automation -->
+                <div class="bento-box ai-box">
+                    <div class="bento-header">
+                        <i class='bx bx-brain'></i>
+                        <h3>Agentic AI & Orchestration</h3>
+                    </div>
+                    <p>I don't just prompt LLMs; I build them into systems. Mastering the art of Model Context Protocols (MCP), Claude Code, and Google Antigravity to create autonomous workflows that solve real-world problems.</p>
+                    <div class="tags">
+                        <span>Claude Code</span>
+                        <span>MCP</span>
+                        <span>LLM Engineering</span>
+                        <span>Ollama</span>
+                        <span>Machine Learning</span>
+                    </div>
+                </div>
+
+                <!-- Bento Box: Cyber -->
+                <div class="bento-box cyber-box">
+                    <div class="bento-header">
+                        <i class='bx bx-shield-quarter'></i>
+                        <h3>Cybersecurity</h3>
+                    </div>
+                    <p>Understanding offensive tactics to build robust defensive perimeters. I'm actively integrating Ethical Hacking methodologies with Machine Learning heuristics to predict and deflect vulnerabilities.</p>
+                    <div class="tags">
+                        <span>Ethical Hacking</span>
+                        <span>Malware Analysis</span>
+                        <span>Network Defenses</span>
+                        <span>OSINT</span>
+                    </div>
+                </div>
+
+                <!-- Bento Box: Systems -->
+                <div class="bento-box sys-box">
+                    <div class="bento-header">
+                        <i class='bx bx-server'></i>
+                        <h3>Infrastructure & SysAdmin</h3>
+                    </div>
+                    <p>Solid foundations in SMR and currently advancing in ASIR & CCNA. I architect, deploy, and maintain robust Linux/Windows environments and complex network topologies.</p>
+                    <div class="tags">
+                        <span>Linux / Bash</span>
+                        <span>Windows Server</span>
+                        <span>CCNA Routing</span>
+                        <span>Hardware</span>
+                    </div>
+                </div>
+
+                 <!-- Bento Box: Development -->
+                 <div class="bento-box dev-box">
+                    <div class="bento-header">
+                        <i class='bx bx-code-alt'></i>
+                        <h3>Full-Stack Dev</h3>
+                    </div>
+                    <p>Designing modern, responsive interfaces and backend logic to serve machine-learning models and enterprise applications seamlessly to the end-user.</p>
+                    <div class="tags">
+                        <span>Python</span>
+                        <span>HTML/CSS/JS</span>
+                        <span>Git</span>
+                        <span>APIs</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="portfolio">
+            <h2 class="heading">Featured <span>Engineering Projects</span></h2>
+            
+            <div class="portfolio-container">
+                
+                <!-- Project 1 -->
+                <div class="portfolio-card">
+                    <div class="card-content">
+                        <div class="card-icon"><i class='bx bx-meteor'></i></div>
+                        <h3>AI Predictive Malware Detection</h3>
+                        <p>A sophisticated Machine Learning model utilizing behavioral analysis to detect malware patterns proactively. It bridges Cybersecurity and Artificial Intelligence by leveraging data-science methodologies.</p>
+                        <div class="card-tech">
+                            <span>Machine Learning</span><span>AI</span><span>Cybersecurity</span>
+                        </div>
+                        <a href="https://github.com/StefanMarioMagura" target="_blank" class="card-link"><i class='bx bx-link-external'></i> View Details</a>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="portfolio-card">
+                    <div class="card-content">
+                        <div class="card-icon"><i class='bx bx-shield-alt-2'></i></div>
+                        <h3>Phishing URL AI Detector</h3>
+                        <p>An intelligent URL classifier that uses advanced heuristics and trained ML datasets to identify malicious or deceptive web links with high accuracy.</p>
+                        <div class="card-tech">
+                            <span>Python</span><span>Data Science</span><span>SecOps</span>
+                        </div>
+                        <a href="https://github.com/StefanMarioMagura/Phishing_Detector_ML_IA" target="_blank" class="card-link"><i class='bx bx-link-external'></i> View Application</a>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="portfolio-card">
+                    <div class="card-content">
+                        <div class="card-icon"><i class='bx bxl-codepen'></i></div>
+                        <h3>Alba IL Pro (Live Enterprise App)</h3>
+                        <p>A comprehensive web application demonstrating full-stack capabilities, handling scheduling, routing, and user dashboards.<br><small style="color:#8892b0;">*Note: DB syncing may be inactive due to hosting schedules. Contact me for demo.*</small></p>
+                        <div class="card-tech">
+                            <span>Frontend</span><span>Backend DB</span><span>Hosting</span>
+                        </div>
+                        <a href="#" class="card-link" onclick="alert('Contact me to enable the database server for full live preview!')"><i class='bx bx-globe'></i> Live Preview</a>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="portfolio-card">
+                    <div class="card-content">
+                        <div class="card-icon"><i class='bx bx-cut'></i></div>
+                        <h3>Hair Salon Booking System</h3>
+                        <p>Live commercial application tailored for a local business to manage appointments and digital presence efficiently.<br><small style="color:#8892b0;">*Note: DB temporarily offline.*</small></p>
+                        <div class="card-tech">
+                            <span>Web Dev</span><span>Business Logic</span><span>UI/UX</span>
+                        </div>
+                        <a href="#" class="card-link" onclick="alert('Contact me to enable the database server for full live preview!')"><i class='bx bx-globe'></i> Live Preview</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section id="credentials" class="credentials">
+            <h2 class="heading">Certifications <span>& Credentials</span></h2>
+            
+            <div class="creds-wrapper">
+                <div class="cred-category">
+                    <h3><i class='bx bx-server'></i> Official Academic</h3>
+                    <ul class="cred-list">
+                        <li>
+                            <strong>Middle Degree in Microcomputer Systems and Networks (SMR)</strong>
+                            <span>Official Certification</span>
+                        </li>
+                        <li>
+                            <strong>Higher Degree in Network Computer Systems Administration (ASIR)</strong>
+                            <span>Currently Pursuing (Mota del Cuervo)</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="cred-category">
+                    <h3><i class='bx bx-globe'></i> International & Practical</h3>
+                    <ul class="cred-list">
+                        <li>
+                            <strong>Erasmus+ Portugal (PombalData)</strong>
+                            <span>International IT Internship | Hardware, Cloud APIs, PDF Parsing, Wintouch ERP</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="cred-category">
+                    <h3><i class='bx bx-lock-alt'></i> Specialized Certifications</h3>
+                    <p class="cred-desc">Click to view certificates:</p>
+                    <div class="cert-grid">
+                        <div class="cert-item" onclick="openCert('cisco-cyber')">
+                            <i class='bx bx-shield-quarter'></i>
+                            <span>Cisco: Intro to Cybersecurity</span>
+                        </div>
+                        <div class="cert-item" onclick="openCert('cisco-linux')">
+                            <i class='bx bxl-tux'></i>
+                            <span>Cisco: Linux Unhatched</span>
+                        </div>
+                        <div class="cert-item" onclick="openCert('google-ai')">
+                            <i class='bx bxl-google'></i>
+                            <span>Google: AI & Productivity</span>
+                        </div>
+                        <div class="cert-item" onclick="openCert('helsinki-ai')">
+                            <i class='bx bx-brain'></i>
+                            <span>Helsinki Univ: Elements of AI</span>
+                        </div>
+                        <div class="cert-item" onclick="openCert('ie-data')">
+                            <i class='bx bx-data'></i>
+                            <span>IE University: Data Science</span>
+                        </div>
+                        <div class="cert-item" onclick="openCert('santander-python')">
+                            <i class='bx bxl-python'></i>
+                            <span>Santander: Python Dev</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Stefan Mario Magura | Engineered with AI & Precision.</p>
+        <div class="footer-up">
+            <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
+    </footer>
+
+    <!-- Modales para Ver Certificados -->
+    <!-- Debes enlazar las imagenes reales de la carpeta /assets/certificados/ aquí dentro de la etiqueta <img> -->
+    <div id="cert-modal" class="modal">
+        <span class="close-modal">&times;</span>
+        <div class="modal-content">
+            <img id="modal-img" src="" alt="Certificate view">
+            <p style="text-align:center; color:#fff; margin-top:20px;">
+                (Update the <code>src</code> attribute in HTML to point to your precise image file in <code>assets/certificados/</code>)
+            </p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
-
